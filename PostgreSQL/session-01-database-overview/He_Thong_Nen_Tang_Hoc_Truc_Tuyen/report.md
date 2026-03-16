@@ -165,14 +165,35 @@ Trong mô hình này **không tồn tại thuộc tính đa trị**.
 
 # 7. Business Rule (Optional)
 
-Một học viên **không thể đăng ký cùng một khóa học nhiều lần**.
+#### Bảng được thêm sẽ là Certificate (ChungChi)
+| Attribute      | Key    | Mô tả                 |
+| -------------- | ------ | --------------------- |
+| **MaChungChi** | **PK** | Mã chứng chỉ          |
+| NgayCap        |        | Ngày cấp chứng chỉ    |
+| MaXacThuc      |        | Mã xác thực chứng chỉ |
+| **MaDangKy**   | **FK** | Tham chiếu DangKyHoc  |
 
-#### Logic ràng buộc:
+#### Quan hệ
+| Relationship                  | Entities Involved    | Cardinality | Notes                       |
+| ----------------------------- | -------------------- | ----------- | --------------------------- |
+| **DangKyHoc** có **ChungChi** | DangKyHoc – ChungChi | 1 – 1       | Chỉ cấp khi hoàn thành khóa |
 
-Trong bảng **DangKyHoc** cần đảm bảo:
-UNIQUE (MaNguoiDung, MaKhoaHoc)
+> Chứng chỉ chỉ được cấp khi trạng thái DangKyHoc = "completed".
+>+ Ở đây vì Bảng DangKyHoc là bảng trung gian được sinh ra cho mối quan hệ N-N giữa NguoiDung và KhoaHoc.
+>+ Và theo phong cách vẽ ERD này thì không thể hiện bảng đó trong ERD.
+>+ Vậy để thể hiện được mối quan hệ giữa DangKyHoc và ChungChi ta cần promote DangKyHoc lên thành 1 Entity bằng cách chuyển quan hệ N-N giữa NguoiDung - KhoaHoc thành:
 
-Điều này đảm bảo mỗi học viên chỉ có **một bản ghi đăng ký cho mỗi khóa học**.
+| Relationship                    | Entities Involved     | Cardinality | Notes                                        |
+| ------------------------------- | --------------------- | ----------- | -------------------------------------------- |
+| **NguoiDung** tạo **DangKyHoc** | NguoiDung – DangKyHoc | 1 – N       | Một người dùng có thể đăng ký nhiều khóa học |
+| **KhoaHoc** có **DangKyHoc**    | KhoaHoc – DangKyHoc   | 1 – N       | Một khóa học có nhiều lượt đăng ký           |
+
+
+#### Foreign Key
+| Table    | Foreign Key | Reference               |
+| -------- | ----------- | ----------------------- |
+| ChungChi | MaDangKy    | **DangKyHoc**(MaDangKy) |
+
 
 ---
 
