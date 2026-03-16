@@ -13,6 +13,7 @@
 | Budget               | Lưu ngân sách theo tháng            |
 | Goal                 | Lưu mục tiêu tiết kiệm              |
 | RecurringTransaction | Lưu các giao dịch định kỳ           |
+|UserCategory| Kết nối giữa User và Category|
 
 ---
 
@@ -104,6 +105,14 @@
 | **MaNguoiDung**      | **FK** | Người dùng     |
 
 ---
+## UserCategory
+| Attribute          | Key    | Mô tả       |
+| ------------------ | ------ | ----------- |
+| **MaUserCategory** | **PK** | Mã liên kết |
+| **MaNguoiDung**    | **FK** | Người dùng  |
+| **MaDanhMuc**      | **FK** | Danh mục    |
+
+---
 
 # 3. Relationships
 
@@ -115,6 +124,8 @@
 | **User** có **Budget**              | **User** – **Budget**          | 1 – N       | Một người dùng có nhiều ngân sách      |
 | **User** có **Goal**                | **User** – **Goal**            | 1 – N       | Một người dùng có nhiều mục tiêu       |
 | **Category** áp dụng cho **Budget** | **Category** – **Budget**      | 1 – N       | Một danh mục có thể có nhiều ngân sách |
+| **User** sử dụng **Category** | **User – Category** | N – N       | Được triển khai thông qua bảng **UserCategory** |
+
 
 #### Lưu ý:
 + **RecurringTransaction** không được liệt kê trong bảng **Relationships** này và cũng không được thể hiện trực tiếp trong **ERD** vì nó không tạo ra quan hệ dữ liệu trực tiếp với **Transaction**.
@@ -150,6 +161,9 @@
 | RecurringTransaction | MaNguoiDung | **User**(MaNguoiDung)   |
 | RecurringTransaction | MaVi        | **Wallet**(MaVi)        |
 | RecurringTransaction | MaDanhMuc   | **Category**(MaDanhMuc) |
+| UserCategory | MaNguoiDung | **User**(MaNguoiDung)           |
+| UserCategory | MaDanhMuc   | **Category**(MaDanhMuc)         |
+
 
 ---
 
