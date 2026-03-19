@@ -29,3 +29,7 @@ SELECT
     column_default
 FROM information_schema.columns
 WHERE table_name = 'books';
+
+-- Hoặc nếu xem cả bảng lẫn data thì
+SELECT *
+FROM library.books
