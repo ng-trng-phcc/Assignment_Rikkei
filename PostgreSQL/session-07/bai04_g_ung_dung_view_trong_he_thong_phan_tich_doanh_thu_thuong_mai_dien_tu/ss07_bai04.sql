@@ -57,3 +57,5 @@ having avg(total_revenue) > (select region, avg(total_revenue) as avg_total_reve
                              from v_revenue_by_region
                              group by region);
 
+
+
