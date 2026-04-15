@@ -2,6 +2,7 @@ create database ktra_cuoi_md01;
 
 -- ================ PHẦN 1: Thao tác với dữ liệu các bảng ================
 
+-- Câu 1
 create table customers
 (
     customer_id        varchar(5) primary key,
@@ -183,7 +184,7 @@ from vw_ttin_khach_hang_va_phong_da_dat_truoc_10_3_2025;
 
 -- 16. (5 điểm) Hãy tạo một view để lấy thông tin khách hàng và phòng đã đặt, với điều kiện diện tích phòng lớn hơn 30 m².
 -- Cần hiển thị các thông tin sau: Mã khách hàng, Họ tên khách hàng, Mã phòng, Diện tích phòng
-create view vw_ttin_khach_hang_va_phong_lon_hon_30m²_da_dat as
+create view vw_ttin_khach_hang_va_phong_lon_hon_30m2_da_dat as
 select c.customer_id, customer_full_name, r.room_id, room_area
 from bookings b
          join rooms r on r.room_id = b.room_id
@@ -191,7 +192,7 @@ from bookings b
 where room_area > 30;
 
 select *
-from vw_ttin_khach_hang_va_phong_lon_hon_30m²_da_dat;
+from vw_ttin_khach_hang_va_phong_lon_hon_30m2_da_dat;
 
 
 -- ==================== PHẦN 4: Tạo Trigger ====================
