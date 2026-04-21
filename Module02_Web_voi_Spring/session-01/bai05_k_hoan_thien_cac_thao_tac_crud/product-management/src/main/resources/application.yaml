@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: product-management
-
-logging:
-  level:
-    org.springframework: DEBUG
