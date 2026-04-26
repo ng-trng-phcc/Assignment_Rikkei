@@ -25,7 +25,7 @@ public class Bai01TinhTienHoaDonSieuThiMain {
         double subTotal = productPrice * productQuantity;
 
         // Tính giảm giá nếu là thành viên
-        double discount = subTotal * 0.1;
+        double discount = (isMember) ? subTotal * 0.1 : 0;
 
         // Tính VAT
         double vat = subTotal * 0.08;
@@ -42,7 +42,7 @@ public class Bai01TinhTienHoaDonSieuThiMain {
         System.out.println("Sản phẩm: " + productName);
         System.out.println("Số lượng: " + productQuantity);
         System.out.println("Thành tiền: " + nf.format(total));
-        System.out.println("Giảm giá thành viên (10%): " + nf.format(subTotal));
+        System.out.println("Giảm giá thành viên (10%): " + nf.format(discount));
         System.out.println("Tiền VAT: " + nf.format(vat));
         System.out.println("Tổng thành toán: " + nf.format(total));
         System.out.println("======================================================");
