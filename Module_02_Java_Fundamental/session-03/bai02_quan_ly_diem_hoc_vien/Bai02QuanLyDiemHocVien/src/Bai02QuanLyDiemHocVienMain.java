@@ -48,7 +48,7 @@ public class Bai02QuanLyDiemHocVienMain {
 
                         hasData = true;
 
-                        if (numberOfStudents == 0) {
+                        if (numberOfStudents == 1) {
                             maxScore = score;
                             minScore = score;
                         } else {
