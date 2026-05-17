@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="476a7e0f-dca1-40b7-8398-1393b33c4231" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../session-01/bai06_xs_tinh_quang_duong_di_duoc/Bai06TinhQuangDuongDiDuoc/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../session-01/bai06_xs_tinh_quang_duong_di_duoc/Bai06TinhQuangDuongDiDuoc/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../session-02/bai04_g_kiem_tra_tinh_hop_le_cua_tam_giac/Bai04KiemTraTinhHopLeCuaTamGiac/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../session-02/bai04_g_kiem_tra_tinh_hop_le_cua_tam_giac/Bai04KiemTraTinhHopLeCuaTamGiac/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../session-02/bai04_g_kiem_tra_tinh_hop_le_cua_tam_giac/Bai04KiemTraTinhHopLeCuaTamGiac/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../session-02/bai04_g_kiem_tra_tinh_hop_le_cua_tam_giac/Bai04KiemTraTinhHopLeCuaTamGiac/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../session-02/bai06_xs_xac_dinh_so_armstrong_trong_khoang_tu_0_den_n/Bai06XacDinhSoArmstrongTrongKhoangTu0DenN/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../session-02/bai06_xs_xac_dinh_so_armstrong_trong_khoang_tu_0_den_n/Bai06XacDinhSoArmstrongTrongKhoangTu0DenN/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../session-03/bai03_quan_ly_luong_nhan_vien/Bai03QuanLyLuongNhanVien/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../session-03/bai03_quan_ly_luong_nhan_vien/Bai03QuanLyLuongNhanVien/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../session-04/bai01_k_sap_xep_mang_giam_dan/Bai01SapXepMangGiamDan/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../session-04/bai01_k_sap_xep_mang_giam_dan/Bai01SapXepMangGiamDan/.idea/material_theme_project_new.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3Dr79WoCx0DjX3klfjUfeQ03ZJr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "MTFeaturesSettingsConfigurable"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="476a7e0f-dca1-40b7-8398-1393b33c4231" name="Changes" comment="" />
+      <created>1779028184387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779028184387</updated>
+    </task>
+    <servers />
+  </component>
+</project>
