@@ -1,4 +1,17 @@
-package PACKAGE_NAME;
+public class Cat extends Mammal {
+    public Cat() {
+    }
 
-public class Cat {
+    public Cat(String name, int age, boolean hasFur) {
+        super(name, age, hasFur);
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println(getName() + " says: meow meow!");
+    }
+
+    public void climbTree() {
+        System.out.println(getName() + " is climbing a tree!");
+    }
 }
